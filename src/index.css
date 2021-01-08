@@ -1,0 +1,532 @@
+/*General*/
+
+/*flexbox over all pages*/
+.flexContainer{ 
+  display:flex;
+  flex-direction: column;
+  height:100%;
+  width: 100%;
+  }
+
+.headerColor{
+  font-size: 100%;
+  font-family: "Arial", sans-serif;
+  color: rgb(235, 228, 205);
+}
+
+.bodyColor{
+  font-size: 100%;
+  font-family: "Arial", sans-serif;
+  color: rgb(93, 93, 93);
+} 
+
+/*Navigation bar*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Arial", sans-serif;
+  background-color : rgb(233, 193, 60);
+  background-image: linear-gradient(rgb(177, 147, 49), rgb(233, 193, 60));
+  list-style: none;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 10px -2px rgba(0,0,0,.2);
+  text-align: center;
+  }
+
+.nav li {
+  flex: auto;
+  font-family: "Arial", sans-serif;
+  }
+
+.nav li:hover{
+  background-color: #fff;
+  background-image: linear-gradient(rgb(233, 193, 60), rgb(177, 147, 49));
+}
+
+.nav-title{
+ padding-top: 7px;
+}
+  
+.nav li a {
+	display: block;
+  padding: 10px 10px;
+	text-decoration: none;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+	color: #fff;
+  }
+
+/*Search function*/
+.search {
+  padding-top: 12%;
+  height: 100%;
+  text-align: center; 
+  align-content: center;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  font-size: 150%;
+  padding-bottom: 5%;
+  } 
+
+.search input[type=text] {
+  float: center;
+  padding: 12px;
+  border-color: rgb(233, 193, 60);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-right: 0px;
+  font-size: 17px;
+  box-shadow: 0 2px 10px -2px rgba(0,0,0,.2);
+}
+
+.search button {
+  background-color: rgb(233, 193, 60);
+  border-color: rgb(233, 193, 60);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 2px 10px -2px rgba(0,0,0,.2);
+}
+	
+/*Graph page*/
+.graph-bg {
+  background: url('./img/pexels-pixabay-326279.jpg');
+  height: 100%;
+  background-position: 0px -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flexGraph{ 
+  display:flex;
+  flex-direction: row;
+  }
+
+.flexGraph input[type=text] {
+  float: center;
+  padding: 8px;
+  border-color: rgb(233, 193, 60);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  margin-top: 8px;
+  margin-right: 0px;
+  font-size: 17px;
+  box-shadow: 0 2px 10px -2px rgba(0,0,0,.2);
+}
+
+.flexGraph button {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(233, 193, 60);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: rgb(176, 143, 37);
+  box-shadow: 0 2px 10px -2px rgba(0,0,0,.2);
+}
+
+.graphContainer{
+  display:flex;
+  flex-direction:column;
+  width : 90%; 
+  align-items:center; 
+ 
+}
+
+.graph{
+  height: 100%;
+  max-width : 100%; 
+  margin: 10px;
+  font-family: "Arial", sans-serif;
+  color: rgb(196, 163, 54);
+  }
+
+.add{
+  height: 40px ; 
+  width : 100%; 
+  margin:10px;
+  text-align: center;
+  font-size: 100%;
+  font-family: "Arial", sans-serif;
+  color: rgb(0, 0, 0); 
+  }
+
+  #expandPage{
+    height: 600px; 
+    width : 100%;
+    background-color: #000000;
+  }
+
+/* Save */
+.save{
+  height: 100% ; 
+  width : 100%; 
+  margin:1px;
+  text-align: left; 
+  align-content: left;
+  font-family: "Arial", sans-serif;
+  color: #FFFFFF
+  }
+
+/* Sidebar */
+.sidebar{
+  flex-basis: 30%;
+  padding: 10px;
+  margin-right: 150px;
+  margin-top: 30px;
+  height: 100%;
+  width: 100%;
+  color: #FFFFFF;
+  border-color: rgb(155, 134, 67);
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 25px;
+  background: rgb(233, 193, 60, 0.6);
+  background-image: linear-gradient(to bottom right, rgb(233, 193, 60,1), rgb(233, 193, 60,0));
+  box-shadow: 0 2px 10px -2px rgba(0,0,0,.2);
+  }
+
+  #sidebar-total {
+    border-top: 1px solid rgb(255, 255, 255);
+  }
+
+  #protein {
+    color: #4bc0c0;
+  }
+
+  #fat {
+    color: #ff6384;
+  }
+  #carbs {
+    color: #36a2eb;
+  }
+
+/*Stored page*/
+.title-box {
+  width:100%;
+  height:120px;
+  border-color: rgb(233, 193, 60);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 15px;
+  background-color: rgb(245, 225, 158);
+  background-image: linear-gradient(rgb(238, 203, 87, 1), rgb(233, 203, 87,0));
+}
+
+.stored-title{
+  font-size: 45px;
+  font-family: "Arial", sans-serif;
+  color: #d49204;
+}
+
+.stored-header{
+  padding-top: 10px;
+  font-size: 35px;
+  font-family: "Arial", sans-serif;
+  color: rgb(255, 255, 255);
+}
+.search-header{
+  padding-top: 0px;
+  font-size: 35px;
+  font-family: "Arial", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+#plusButton {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 180px;
+}
+
+#plusButton:hover {
+  color:#ff6384;
+  cursor: pointer;
+}
+
+.graph-button:hover {
+  background-color:rgb(197, 180, 125);
+}
+
+#recipe-remove:hover {
+  background-color: #ff6384;
+  color: #fff;
+}
+
+.flexStored{
+  padding-bottom: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center; 
+  align-content: center;
+  align-items: center;
+  font-size: 150%;
+  height:100%;
+  background: linear-gradient(rgb(255, 255, 255, 0), rgba(255, 255, 255, 1)), 
+              url('./img/pexels-alexy-almond-3756523.jpg');
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.flexStored button {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(233, 193, 60);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: rgb(176, 143, 37);
+  box-shadow: 0 2px 10px -2px rgba(0,0,0,.2);
+}
+
+.flexStored .newRecipe button {
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(233, 193, 60);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: rgb(176, 143, 37);
+  box-shadow: 0 2px 10px -2px rgba(0,0,0,.2);
+}
+
+.recipesContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  margin: 20px;
+  width:100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin: 10px;
+  }
+
+.recipesContainer ul{
+  list-style-type: none;
+  width: 20%;
+  height: 20%;
+  }
+
+.recipe{
+  width:250px;
+  height:250px;
+  color: #FFFFFF;
+  border-color: rgb(233, 193, 60);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 25px;
+  background-color: rgb(248, 227, 165);
+  background-image: linear-gradient(rgb(238, 203, 87, 1), rgb(233, 203, 87,0));
+  box-shadow: 0 2px 10px -2px rgba(0,0,0,.2);
+  margin: 10px;
+}
+
+#recipe-name:hover {
+  color:#ff6384;
+}
+
+.recipie-dougnut{
+  height: 150px;
+}
+
+.recipe button {
+  width:80%;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(233, 193, 60);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: rgb(176, 143, 37);
+  box-shadow: 0 2px 10px -2px rgba(0,0,0,.2);
+}
+
+.recipe p{
+  margin-top: 10px;
+  font-size:120%;
+  text-align: center;
+  color: #FFFFFF;
+  width:250px;
+  }
+
+.recipe li{
+  font-size:150%;
+  color: #FFFFFF;
+  margin-top: 0px;
+  width:250px;
+  height:100%;
+  }
+
+  /* Homepage */
+  #homepage {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(240, 227, 182);;
+  }
+
+  #bouncy-table {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #bouncy-row {
+
+    padding: 200px;
+  }
+
+  .bouncy-column {
+    padding-left: 30px;
+  }
+
+  #homepage-title{
+    margin-left: 30%;
+    margin-top: 5%;
+    font-size: 70px;
+    color: rgb(233, 193, 60);
+    text-shadow: #ff6384;
+  }
+
+  #homepage-under-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    font-size: 40px;
+    color: rgb(233, 193, 60);
+    text-shadow: #ff6384;
+  }
+
+  #getStarted {
+    background-color: rgb(233, 193, 60);
+    border-color: rgb(233, 193, 60);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    box-shadow: 0 2px 10px -2px rgba(0,0,0,.2);
+    margin-left: 46%;
+    margin-top: 2%;
+  }
+
+html {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: rgb(240, 227, 182);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  }
+
+/* Search */
+.search-bg {
+  background: url('./img/pexels-ella-olsson-1640777.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 2%;
+}
+
+.search-text {
+  font-size: 40px;
+  font-family: "Arial", serif;
+  font-weight: bold;
+  color: #000000;
+  background-color: #FFFF;
+}
+
+
+/* Table */
+.table {
+  text-align: center;
+}
+
+.table-elem {
+  padding-left: 20px;
+}
+
+
+/* Show/Hide button*/
+.hide{
+  display:none;
+  }
+  
+.show{
+  display:block;
+  }
+  #no-ingredient {
+    text-align: center;
+  }
+
+  button:disabled,
+  button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
+
+
+  button:disabled,
+  button[disabled]:hover {
+    cursor: auto;
+    background-color: #cccccc;
+  }
